@@ -1,0 +1,485 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot?se2tdh");
+  src: url("../fonts/icomoon.eot?se2tdh#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?se2tdh") format("truetype"), url("../fonts/icomoon.woff?se2tdh") format("woff"), url("../fonts/icomoon.svg?se2tdh#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-twitter:before {
+  content: "\f099";
+}
+
+.btn {
+  width: 124px;
+  height: 44px;
+  color: #fff;
+  border-radius: 2px 3px 3px 2px;
+  background-color: #23b7a4;
+  border: 2px solid #23b7a4;
+  cursor: pointer;
+  outline: none;
+}
+
+.btn--white {
+  background: transparent;
+  border: 2px solid #fff;
+}
+
+.menu__link {
+  color: #a4aead;
+  cursor: pointer;
+  text-transform: uppercase;
+  padding: 10px;
+}
+
+.menu__link--active {
+  border: 2px solid #23b7a4;
+  color: #23b7a4;
+}
+
+.menu__link--hover {
+  border: 2px solid #5b6168;
+  border-radius: 2px 1px 1px 2px;
+}
+
+.icon__link {
+  padding: 20px;
+  background: #c8cdd0;
+  cursor: pointer;
+}
+
+.icon__link--hover {
+  background: #d6dadc;
+}
+
+.icon__link:hover {
+  background: #d6dadc;
+}
+
+h2 {
+  font-size: 36px;
+  line-height: 42px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #292f36;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 42px;
+  text-transform: uppercase;
+  color: #292f36;
+}
+
+h4 {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 35px;
+  text-transform: uppercase;
+  color: #292f36;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #8d8f92;
+}
+
+p > span {
+  font-weight: 700;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Open Sans;
+}
+
+.wrapper {
+  width: 980px;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+strong {
+  font-size: 40px;
+  padding: 20px 0;
+  display: block;
+  font-weight: bold;
+}
+
+.colors li {
+  display: inline-block;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  width: 280px;
+  height: 100px;
+  color: #fff;
+  padding: 20px;
+}
+
+.colors .primary-color {
+  background: #23b7a4;
+}
+
+.colors .secondary-color {
+  background: #c8cdd0;
+  color: black;
+}
+
+.colors .typography-color {
+  background: #8d8f92;
+}
+
+.colors .typography-color-2 {
+  background: #a4aead;
+}
+
+.colors .typography-color-3 {
+  background: #ccd0d7;
+  color: black;
+}
+
+.colors .typography-color-4 {
+  background: #dcdfe1;
+  color: black;
+}
+
+.colors .headline-color {
+  background: #292f36;
+}
+
+.colors .background-color {
+  background: #1d2126;
+}
+
+.colors .background-color-2 {
+  background: #3a454d;
+}
+
+.buttons {
+  background: #ccc;
+  padding-bottom: 40px;
+  padding-left: 20px;
+}
+
+.buttons li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.buttons li:first-child button:hover {
+  background: #1b8c7e;
+  border: 2px solid #1b8c7e;
+}
+
+.buttons li:nth-child(2) button:hover {
+  border: 2px solid #e6e6e6;
+}
+
+.links {
+  background: #3a454d;
+  padding-bottom: 40px;
+  padding-left: 20px;
+  color: #fff;
+}
+
+.links li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.links span {
+  display: block;
+  margin-top: 20px;
+}
+
+.links strong:nth-child(3) {
+  margin-top: 30px;
+  display: block;
+}
+
+.links .icon-twitter {
+  font-size: 22px;
+}
+
+.typography {
+  text-align: left;
+}
+
+.typography h1 {
+  padding: 20px 0;
+}
+
+.typography strong {
+  text-align: center;
+}
+
+.card__hover {
+  margin-left: 20px;
+}
+
+.card__hover .card__inner__bg.card__inner__bg.card__inner__bg {
+  display: block;
+}
+
+.card__hover .card__inner.card__inner.card__inner {
+  display: block;
+}
+
+.card__hover .card__description.card__description {
+  background: #3a454d;
+}
+
+.card__hover .card__description p {
+  color: #fff !important;
+}
+
+.card__hover li:nth-child(3) .icon__link {
+  background: #505f6a !important;
+}
+
+.card {
+  width: 263px;
+  display: inline-block;
+}
+
+.card:hover .card__inner__bg, .card:hover .card__inner {
+  display: block;
+}
+
+.card:hover .card__description, .card:hover .card__description p {
+  background: #3a454d;
+  color: #fff;
+}
+
+.card strong {
+  font-size: 20px;
+}
+
+.card .card__img {
+  position: relative;
+  display: block;
+}
+
+.card .card__inner__bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.4);
+  top: 0;
+  display: none;
+}
+
+.card .card__inner {
+  position: absolute;
+  top: 50%;
+  text-align: center;
+  left: 15%;
+  display: none;
+}
+
+.card .card__inner li {
+  display: inline-block;
+  margin-right: 1px;
+}
+
+.card .card__inner .icon__link {
+  background: #3a454d;
+}
+
+.card .card__inner .icon__link:hover {
+  background: #505f6a;
+}
+
+.card .card__inner .icon-twitter {
+  color: #fff;
+}
+
+.card .card__description {
+  background-color: #e1e6ea;
+  text-align: left;
+  padding-left: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.card .card__title {
+  color: #292f36;
+}
+
+.card .card__text {
+  font-size: 14px;
+}
+
+.card-work-hover .card__inner__bg.card__inner__bg {
+  display: block;
+}
+
+.card-work-hover .card__inner.card__inner {
+  display: block;
+}
+
+.card-work-hover .card__inner__bg:before {
+  display: block !important;
+}
+
+.card-work {
+  width: 360px;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.card-work strong {
+  font-size: 20px;
+}
+
+.card-work .card__img {
+  position: relative;
+}
+
+.card-work .card__inner__bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #292f36;
+  opacity: 0.5;
+  top: 0;
+  display: none;
+}
+
+.card-work .card__inner {
+  background-color: #292f36;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 10px 0;
+  padding-left: 20px;
+  display: none;
+}
+
+.card-work .card__inner__bg:before {
+  content: '';
+  display: block;
+  background: url(../images/cross.png) no-repeat;
+  width: 20px;
+  height: 20px;
+  opacity: 1;
+  color: #fff;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  margin-left: -20px;
+  display: none;
+}
+
+.card-work .card__inner h3 {
+  color: #fff;
+  text-align: left;
+}
+
+.card-work .card__img:hover .card__inner__bg, .card-work .card__img:hover .card__inner, .card-work .card__img:hover .card__inner__bg:before {
+  display: block;
+}
+
+.forms .form-group label {
+  color: #8d8f92;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.forms .form-group input {
+  background-color: #eaeef1;
+  border-radius: 2px;
+  height: 44px;
+  width: 100%;
+  border: none;
+  outline: none;
+}
+
+.forms .form-group textarea {
+  background-color: #eaeef1;
+  border-radius: 2px;
+  height: 44px;
+  width: 100%;
+  border: none;
+  outline: none;
+}

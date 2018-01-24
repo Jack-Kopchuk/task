@@ -1,0 +1,120 @@
+
+//Colors
+
+
+$primary-color: #23b7a4;
+$secondary-color: #c8cdd0;
+$typography-color: #8d8f92;
+$typography-color-2: #a4aead;
+$typography-color-3: #ccd0d7;
+$typography-color-4: #dcdfe1;
+$headline-color: #292f36;
+$background-color: #1d2126;
+$background-color-2: #3a454d;
+$typography-color-white: #fff;
+
+
+
+// Buttons
+
+.btn {
+	width: 124px;
+	height: 44px;
+	color: #fff;
+	border-radius: 2px 3px 3px 2px;
+	background-color: $primary-color;
+	border: 2px solid $primary-color;
+	cursor: pointer;
+	outline: none;
+}
+.btn--white {
+	background: transparent;
+	border: 2px solid #fff;
+}
+
+
+
+//Menu-links
+
+.menu__link {
+	color: $typography-color-2;
+	cursor: pointer;
+	text-transform: uppercase;
+	padding: 10px;
+}
+.menu__link--active {
+	border: 2px solid $primary-color;
+	color: $primary-color;
+}
+.menu__link--hover {
+	border: 2px solid #5b6168;
+	border-radius: 2px 1px 1px 2px;
+}
+.menu__link:hover {
+	
+}
+
+
+// icon-links 
+
+
+.icon__link {
+	padding: 20px;
+	background: $secondary-color;
+	cursor: pointer;
+}
+.icon__link--hover {
+	background: lighten($secondary-color,5%);
+}
+.icon__link:hover {
+	background: lighten($secondary-color,5%);
+}
+
+
+// Typography 
+
+
+
+h2 {
+	font-size: 36px;
+	line-height: 42px;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: $headline-color;
+}
+h3 {
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 42px;
+	text-transform: uppercase;
+	color: $headline-color;
+}
+h4 {
+	font-size: 17px;
+	font-weight: 700;
+	line-height: 35px;
+	text-transform: uppercase;
+	color: $headline-color;
+}
+
+p {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 26px;
+	color: $typography-color;
+}
+p>span {
+	font-weight: 700;
+}
+
+
+
+
+/// cards 
+
+
+img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}

@@ -1,0 +1,285 @@
+@import "reset";
+@import "icon";
+@import "elements";
+
+* {
+	box-sizing:border-box;
+}
+body {
+	font-family: Open Sans;
+}
+.wrapper {
+	width: 980px;
+	margin: 0 auto;
+	text-align: center;
+	padding-bottom: 50px;
+}
+strong {
+	font-size: 40px;
+	padding: 20px 0 ;
+	display: block;
+	font-weight: bold;
+}
+.colors {
+	li {
+		display: inline-block;
+		margin-right: 20px;
+		margin-bottom: 20px;
+		width: 280px;
+		height: 100px;
+		color: #fff;
+		padding: 20px;
+	}
+	.primary-color {
+		background: $primary-color;
+	}
+	.secondary-color {
+		background: $secondary-color;
+		color: black;
+	}
+	.typography-color {
+		background: $typography-color;
+	}
+	.typography-color-2 {
+		background: $typography-color-2;
+	}
+	.typography-color-3 {
+		background: $typography-color-3;
+		color: black;
+	}
+	.typography-color-4 {
+		background: $typography-color-4;
+		color: black;
+	}
+	.headline-color {
+		background: $headline-color;
+	}
+	.background-color {
+		background: $background-color;
+	}
+	.background-color-2 {
+		background: $background-color-2;
+	}
+}
+.buttons {
+	background: #ccc;
+	padding-bottom: 40px;
+	padding-left: 20px;
+	li {
+		display: inline-block;
+		margin-right: 20px;
+	}
+	li:first-child {
+		button:hover {
+			background: darken($primary-color,10%);
+			border:2px solid darken($primary-color,10%);
+		}
+	}
+	li:nth-child(2) {
+		button:hover {
+			border:2px solid darken(#fff,10%);
+		}
+	}
+}
+.links {
+	background: $background-color-2;
+	padding-bottom: 40px;
+	padding-left: 20px;
+	color: #fff;
+		li {
+			display: inline-block;
+			margin-right: 20px;
+		}
+		span {
+			display: block;
+			margin-top: 20px;
+		}
+	strong:nth-child(3){
+		margin-top: 30px;
+		display: block;
+	}
+	.icon-twitter {
+		font-size: 22px;
+	}
+
+}
+.typography {
+	text-align: left;
+	h1 {
+		padding: 20px 0;
+	}
+	strong {
+		text-align: center;
+	}
+}
+
+.card__hover {
+	margin-left: 20px;
+	.card__inner__bg.card__inner__bg.card__inner__bg {
+		display: block;
+	}
+	.card__inner.card__inner.card__inner {
+		display: block;
+	}
+	.card__description.card__description{
+		background: $background-color-2;
+	}
+	.card__description p{
+		color: #fff !important;
+	}
+	li:nth-child(3) .icon__link{
+			background: lighten($background-color-2, 10%) !important;
+		}
+}
+
+.card {
+	width: 263px;
+	display: inline-block;
+	&:hover .card__inner__bg , &:hover .card__inner {
+		display: block;
+	}
+	&:hover .card__description , &:hover .card__description p {
+		background: $background-color-2;
+		color: #fff;
+	}
+	strong{
+		font-size: 20px;
+	}
+	.card__img {
+		position: relative;
+		display: block
+	}
+	
+	.card__inner__bg {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background: rgba(255,255,255, 0.4);
+		top: 0;
+		display: none;
+
+	}
+	.card__inner {
+		position: absolute;
+		top: 50%;
+		text-align: center;
+		left: 15%;
+		display: none;
+		
+		li {
+			display: inline-block;
+			margin-right: 1px;
+		}
+		.icon__link {
+			background: $background-color-2;
+		}
+		.icon__link:hover {
+			background: lighten($background-color-2, 10%);
+		}
+		.icon-twitter {
+			color: #fff;
+		}
+	}
+	.card__description {
+		background-color: #e1e6ea;
+		text-align: left;
+		padding-left: 20px;
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+	.card__title {
+		color: $headline-color;
+	}
+	.card__text {
+		font-size: 14px;
+	}
+
+}
+.card-work-hover {
+	.card__inner__bg.card__inner__bg {
+		display: block;
+	}
+	.card__inner.card__inner {
+		display: block;
+	}
+	.card__inner__bg:before {
+		display: block !important;
+	}
+}
+.card-work{
+	width: 360px;
+	display: inline-block;
+	margin-right: 20px;
+	strong {
+		font-size: 20px;
+	}
+	.card__img {
+		position: relative;
+	}
+	.card__inner__bg {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background-color: #292f36;
+		opacity: 0.5;
+		top: 0;
+		display: none;
+	}
+	.card__inner {
+		background-color: #292f36;
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		padding: 10px 0;
+		padding-left: 20px;
+		display: none;
+	}
+	.card__inner__bg:before {
+		    content: '';
+		    display: block;
+		    background: url(../images/cross.png) no-repeat;
+		    width: 20px;
+		    height: 20px;
+		    opacity: 1;
+		    color: #fff;
+		    position: absolute;
+		    top: 35%;
+		    left: 50%;
+		    margin-left: -20px;
+		    display: none;
+	}
+	.card__inner h3 {
+		color: #fff;
+		text-align: left;
+	}
+	.card__img:hover .card__inner__bg, .card__img:hover .card__inner ,.card__img:hover .card__inner__bg:before{
+		display: block;
+	}
+}
+.forms {
+	.form-group {
+		label{
+			color: $typography-color;
+			font-size: 14px;
+			font-weight: 700;
+			line-height: 26px;
+			text-transform: uppercase;
+		}
+		input {
+			background-color: #eaeef1;
+			border-radius: 2px;
+			height: 44px;
+			width: 100%;
+			border: none;
+			outline: none;
+		}
+		textarea {
+			background-color: #eaeef1;
+			border-radius: 2px;
+			height: 44px;
+			width: 100%;
+			border: none;
+			outline: none;
+		}
+	}
+}
